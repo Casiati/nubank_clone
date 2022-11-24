@@ -20,7 +20,6 @@ class _HomePageState extends State<HomePage> {
         : setState(() {
             showValue = true;
           });
-    print(showValue);
     (showValue)
         ? setState(() {
             emprestimo = 'R\$ 9999,00';
@@ -49,11 +48,11 @@ class _HomePageState extends State<HomePage> {
                     const SizedBox(height: 20),
                     Row(
                       children: [
-                        SizedBox(width: 5),
+                        const SizedBox(width: 5),
                         Container(
-                          decoration: ShapeDecoration(
+                          decoration: const ShapeDecoration(
                             color: nuColor2,
-                            shape: const CircleBorder(),
+                            shape: CircleBorder(),
                           ),
                           child: IconButton(
                             iconSize: 50,
@@ -141,36 +140,36 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             menuHorizontal(),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Container(
                 height: 60,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Color.fromARGB(100, 225, 225, 225),
+                  color: const Color.fromARGB(100, 225, 225, 225),
                 ),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Padding(
                       padding: const EdgeInsets.fromLTRB(20, 15, 20, 20),
-                      child: Icon(Icons.credit_card_rounded),
+                      child: Image.network('https://cdn-icons-png.flaticon.com/512/2169/2169874.png',cacheHeight: 40),
                     ),
-                    Text('Meus Cartões',
+                    const Text('Meus Cartões',
                         style: TextStyle(fontWeight: FontWeight.w500))
                   ],
                 ),
               ),
             ),
-            SizedBox(height: 20),
-            novidadesHorizontal(emprestimo),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
+            novidadesHorizontal(emprestimo, showValue),
+            const SizedBox(height: 20),
             Container(
               height: 2,
-              color: Color.fromARGB(100, 225, 225, 225),
+              color: const Color.fromARGB(100, 225, 225, 225),
             ),
             Padding(
               padding: const EdgeInsets.all(22.0),
@@ -191,8 +190,8 @@ class _HomePageState extends State<HomePage> {
                       Icon(Icons.arrow_forward_ios_outlined)
                     ],
                   ),
-                  SizedBox(height: 15),
-                  Text(
+                  const SizedBox(height: 15),
+                  const Text(
                     'Fatura atual',
                     style: TextStyle(
                       color: Color.fromARGB(200, 50, 50, 50),
@@ -239,15 +238,15 @@ class _HomePageState extends State<HomePage> {
                             ),
                     ],
                   ),
-                  SizedBox(height: 15),
+                  const SizedBox(height: 15),
                   Container(
                     height: 45,
                     width: 150,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(50),
-                      color: Color.fromARGB(100, 225, 225, 225),
+                      color: const Color.fromARGB(100, 225, 225, 225),
                     ),
-                    child: Center(
+                    child: const Center(
                       child: Text(
                         'Parcelar compras',
                         style: TextStyle(
@@ -258,13 +257,13 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             Container(
               height: 2,
-              color: Color.fromARGB(100, 225, 225, 225),
+              color: const Color.fromARGB(100, 225, 225, 225),
             ),
-            Padding(
-              padding: const EdgeInsets.all(20.0),
+            const Padding(
+              padding: EdgeInsets.all(20.0),
               child: Text(
                 'Acompanhe também',
                 style: TextStyle(
@@ -280,13 +279,13 @@ class _HomePageState extends State<HomePage> {
                 height: 60,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Color.fromARGB(100, 225, 225, 225),
+                  color: const Color.fromARGB(100, 225, 225, 225),
                 ),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
+                  children: const [
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(20, 15, 20, 20),
+                      padding: EdgeInsets.fromLTRB(20, 15, 20, 20),
                       child: Icon(Icons.attach_money_sharp),
                     ),
                     Text('Assistente de pagamentos',
@@ -295,10 +294,10 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             Container(
               height: 2,
-              color: Color.fromARGB(100, 225, 225, 225),
+              color: const Color.fromARGB(100, 225, 225, 225),
             ),
             Padding(
               padding: const EdgeInsets.all(22.0),
@@ -319,7 +318,7 @@ class _HomePageState extends State<HomePage> {
                       Icon(Icons.arrow_forward_ios_outlined)
                     ],
                   ),
-                  SizedBox(height: 15),
+                  const SizedBox(height: 15),
                   const Text(
                     'Valor disponivel de até ',
                     style: TextStyle(
@@ -328,17 +327,17 @@ class _HomePageState extends State<HomePage> {
                   ),
                   Text(
                     emprestimo,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Color.fromARGB(200, 50, 50, 50),
                     ),
                   ),
                 ],
               ),
             ),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             Container(
               height: 2,
-              color: Color.fromARGB(100, 225, 225, 225),
+              color: const Color.fromARGB(100, 225, 225, 225),
             ),
             const Padding(
               padding: EdgeInsets.all(20.0),
@@ -352,11 +351,12 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             descubraMaisHorizontal(),
+            const SizedBox(height: 20),
           ],
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-        color: Colors.white.withOpacity(0.5),
+        color: Colors.white.withOpacity(1),
         child: Padding(
           padding: const EdgeInsets.all(8),
           child: OverflowBar(
@@ -366,26 +366,26 @@ class _HomePageState extends State<HomePage> {
             children: [
               IconButton(
                 onPressed: () {},
-                splashColor: Colors.purple,
-                icon: Icon(Icons.wifi_protected_setup),
+                splashColor: nuColor,
+                icon: const Icon(Icons.wifi_protected_setup, color: nuColor2,),
               ),
-              SizedBox(width: 50),
+              const SizedBox(width: 50),
               IconButton(
                 onPressed: () {},
-                splashColor: Colors.purple,
-                icon: Icon(Icons.attach_money),
+                splashColor: nuColor,
+                icon: const Icon(Icons.attach_money),
               ),
-              SizedBox(width: 50),
+              const SizedBox(width: 50),
               IconButton(
                 onPressed: () {},
-                splashColor: Colors.purple,
-                icon: Icon(Icons.shopping_bag_outlined),
+                splashColor: nuColor,
+                icon: const Icon(Icons.shopping_bag_outlined),
               ),
-              SizedBox(width: 50),
+              const SizedBox(width: 50),
               IconButton(
                 onPressed: () {},
-                splashColor: Colors.purple,
-                icon: Icon(Icons.sports_soccer_sharp),
+                splashColor: nuColor,
+                icon: const Icon(Icons.sports_soccer_sharp),
               ),
             ],
           ),
