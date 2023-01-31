@@ -1,16 +1,10 @@
-# nubank_clone
+# Nubank_clone
 
-A new Flutter project.
+Desafio de clone usando apenas Flutter que foi passado pelo <a href="https://github.com/DouglasSilvar">Douglas Silva
 
-## Getting Started
+O aplicativo escolhido por ele foi Nubank.
 
-This project is a starting point for a Flutter application.
+Atualmente o App conta apenas com a página inicial, não sei se futuramente continue a integração das demais páginas uma que fez que o propósito do desafio já foi atingido, propósito esse que era apenas para estudos.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# ScreenShots
+<img height="450" src="https://www.imagemhost.com.br/images/2022/11/24/Screenshot_1669319135.png" target="_blank"/>  <img height="450" src="https://www.imagemhost.com.br/images/2022/11/24/Screenshot_1669319142.png" target="_blank"/>  <img height="450" src="https://www.imagemhost.com.br/images/2022/11/24/Screenshot_1669319146.png" target="_blank"/>  <img height="450" src="https://www.imagemhost.com.br/images/2022/11/24/Screenshot_1669319158.png" target="_blank"/>
