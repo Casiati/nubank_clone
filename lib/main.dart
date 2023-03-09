@@ -29,7 +29,10 @@ class MyApp extends StatelessWidget {
             color: Colors.white,
           ),
         ),
-        iconTheme: const IconThemeData(color: Colors.white), colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.deepPurple).copyWith(background: const Color(0xFF510072)).copyWith(secondary: Colors.white),
+        iconTheme: const IconThemeData(color: Colors.white),
+        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.deepPurple)
+            .copyWith(background: const Color(0xFF510072))
+            .copyWith(secondary: Colors.white),
       ),
       home: const HomePage(),
     );
