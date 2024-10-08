@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         splashColor: const Color(0xFF7D18C5),
         cardColor: const Color(0x99E6E6E6),
         colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.deepPurple)
-            .copyWith(background: const Color(0xFFFFFFFF))
+            .copyWith(surface: const Color(0xFFFFFFFF))
             .copyWith(secondary: Colors.black),
       ),
       darkTheme: ThemeData(
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         ),
         iconTheme: const IconThemeData(color: Colors.white),
         colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.deepPurple)
-            .copyWith(background: const Color(0xFF510072))
+            .copyWith(surface: const Color(0xFF510072))
             .copyWith(secondary: Colors.white),
       ),
       home: const HomePage(),

@@ -12,10 +12,13 @@ class ItemDescubraMais extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size screenSize = MediaQuery.of(context).size;
+    double widgetHeight = screenSize.height;
+
     return Column(
       children: [
         Container(
-          height: 300,
+          height: widgetHeight * 0.4,
           width: 270,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
@@ -37,7 +40,7 @@ class ItemDescubraMais extends StatelessWidget {
                   color: Theme.of(context).cardColor,
                 ),
                 alignment: Alignment.centerLeft,
-                height: 175,
+                height: widgetHeight * 0.2,
                 child: Padding(
                   padding: const EdgeInsets.all(15.0),
                   child: Column(

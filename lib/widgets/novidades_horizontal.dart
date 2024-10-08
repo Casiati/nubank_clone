@@ -20,13 +20,13 @@ class NovidadesHorizontal extends StatelessWidget {
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 color: Theme.of(context).cardColor),
-            child: Column(
+            child: const Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
-                  children: const [
+                  children: [
                     SizedBox(width: 25),
                     Text(
                       'Modo Rua: ',
@@ -40,7 +40,7 @@ class NovidadesHorizontal extends StatelessWidget {
                     )
                   ],
                 ),
-                const Padding(
+                Padding(
                   padding: EdgeInsets.only(left: 25),
                   child: Text('segurança do seu app',
                       style: TextStyle(
@@ -102,13 +102,13 @@ class NovidadesHorizontal extends StatelessWidget {
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 color: Theme.of(context).cardColor),
-            child: Column(
+            child: const Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
-                  children: const [
+                  children: [
                     SizedBox(width: 25),
                     Text(
                       'Convide amigos para o Nubank',
@@ -116,7 +116,7 @@ class NovidadesHorizontal extends StatelessWidget {
                     ),
                   ],
                 ),
-                const Padding(
+                Padding(
                   padding: EdgeInsets.only(left: 25),
                   child: Text('e desbloqueie brasões incríveis.',
                       style: TextStyle(

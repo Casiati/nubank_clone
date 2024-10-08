@@ -7,12 +7,12 @@ class MenuHorizontal extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return const SingleChildScrollView(
         scrollDirection: Axis.horizontal,
-        physics: const BouncingScrollPhysics(),
+        physics: BouncingScrollPhysics(),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
+          children: [
             SizedBox(width: 20),
             ItemMenu(Icons.pix, 'Área Pix'),
             ItemMenu(CupertinoIcons.barcode, 'Pagar'),
