@@ -9,4 +9,4 @@ Atualmente o App conta apenas com a página inicial, não sei se futuramente con
 Att. Adicionado Tema Escuro.
 
 # ScreenShots
-<img height="450" src="https://www.imagemhost.com.br/images/2022/11/24/Screenshot_1669319135.png" target="_blank"/>  <img height="450" src="https://www.imagemhost.com.br/images/2022/11/24/Screenshot_1669319142.png" target="_blank"/>  <img height="450" src="https://www.imagemhost.com.br/images/2022/11/24/Screenshot_1669319146.png" target="_blank"/>  <img height="450" src="https://www.imagemhost.com.br/images/2022/11/24/Screenshot_1669319158.png" target="_blank"/>  <img height="450" src="https://www.imagemhost.com.br/images/2023/01/31/Screenshot_1675203450.png" target="_blank"/>  <img height="450" src="https://www.imagemhost.com.br/images/2023/01/31/Screenshot_1675203455.png" target="_blank"/>
+Links Off
